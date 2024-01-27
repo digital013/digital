@@ -198,7 +198,22 @@ section {
   font-size: 3rem;
   text-align: center;
 }
-
+.typing-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.typing-text::after {
+  content: "|";
+  animation: blink ease 1s infinite;
+}
+@keyframes blink {
+  0%, 70% {
+    opacity: 0;
+  } 50% {
+    opacity: 1;
+  }
+}
 #socials-container {
   display: flex;
   justify-content: center;
