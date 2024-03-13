@@ -129,6 +129,9 @@ main {
     width: 160px;
     height: 270px;
   }
+  .item:nth-child(3) {
+    left: 50%;
+  }
   .item:nth-child(4) {
     left: calc(50% + 170px);
   }
@@ -154,6 +157,9 @@ main {
   .item {
     width: 130px;
     height: 220px;
+  }
+  .item:nth-child(3) {
+    left: 50%;
   }
   .item:nth-child(4) {
     left: calc(50% + 140px);
