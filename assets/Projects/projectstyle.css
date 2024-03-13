@@ -5,11 +5,10 @@
 }
 
 body {
-  height: 200%;
+  height: 100vh;
   display: grid;
   place-items: center;
   overflow: hidden;
-  width: 100%;
 }
 
 main {
