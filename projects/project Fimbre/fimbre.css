@@ -1,0 +1,52 @@
+/* Logo Styling */
+.logo-container {
+    margin-right: 20px;
+  }
+  
+  .logo-container img {
+    height: 50px;
+  }
+  /* BLOGS SECTION */
+  #blogs {
+    padding: 4vh 0;
+    background-color: #f9f9f9;
+  }
+  
+  .blog-card {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .blog-card img {
+    max-width: 100%;
+    border-radius: 0.5rem;
+  }
+  
+  .blog-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: rgb(53, 53, 53);
+  }
+  
+  .blog-card p {
+    color: rgb(85, 85, 85);
+  }
+  
+  .blog-card a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .blog-card a:hover {
+    text-decoration: underline;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .blog-card {
+      padding: 1.5rem;
+    }
+  }
+  
