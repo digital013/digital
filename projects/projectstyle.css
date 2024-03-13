@@ -155,3 +155,24 @@ main {
     &:nth-child(6) { left: calc(50% + 420px); opacity: 0; }
   }
 }
+/* Add this media query at the end of your CSS file */
+
+@media only screen and (max-width: 768px) {
+  /* Adjust slider item width and margins */
+  .slider .item {
+    width: 100%;
+    margin-right: 0;
+  }
+  
+  /* Adjust content layout */
+  .content {
+    padding: 1rem;
+  }
+  
+  /* Adjust button styles */
+  .button {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
