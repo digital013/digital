@@ -6,6 +6,10 @@
   .logo-container img {
     height: 50px;
   }
+  .scrollable-image {
+    max-height: 400px; /* Adjust as needed */
+    overflow-y: scroll;
+}
   /* BLOGS SECTION */
   #blogs {
     padding: 4vh 0;
