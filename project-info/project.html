@@ -1,16 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <link rel="stylesheet "href="projectstyle.css">
-  <link rel="stylesheet" href="projectqueries.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider</title>
+  <link rel="stylesheet" href="projectstyle.css">
+  <link rel="stylesheet" href="projectqueries.css">
 </head>
-<main>
-  <ul class='slider'>
-    <li class='item' style="background-image: url('App.png')">
-  <div class='content'>
-    <h2 class='title'>"Fimbre"</h2>
-    <p class='description'> Fimbre is one of a kind community-based platform where you find people with common interests in communities.  </p>
-    <button><a href="project/fimbre.html">Read More</a></button>
-  </div>
-</li>
+<body>
+  <main>
+    <ul class='slider'>
+      <li class='item' style="background-image: url('App.png')">
+        <div class='content'>
+          <h2 class='title'>Fimbre</h2>
+          <p class='description'>Fimbre is one of a kind community-based platform where you find people with common interests in communities.</p>
+          <button><a href="project/fimbre.html">Read More</a></button>
+        </div>
+      </li>
     <li class='item' style="background-image: url('IT.png')">
       <div class='content'>
         <h2 class='title'>"Clockdiary"</h2>
@@ -54,12 +60,28 @@ and personalized assistance.  </p>
       </div>
     </li>-->
   </ul>
-  <nav class='nav'>
-    <ion-icon class='btn prev' name="arrow-back-outline"></ion-icon>
-    <ion-icon class='btn next' name="arrow-forward-outline"></ion-icon>
-  </nav>
-  <script src="projectscript.js"></script>
-</main>
+    <nav class='nav'>
+      <ion-icon class='btn prev' name="arrow-back-outline"></ion-icon>
+      <ion-icon class='btn next' name="arrow-forward-outline"></ion-icon>
+    </nav>
+  </main>
 
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script>
+    document.addEventListener('click', function(event) {
+      const slider = document.querySelector('.slider');
+      const items = document.querySelectorAll('.item');
+
+      if (event.target.matches('.next') || event.target.classList.contains('item')) {
+        slider.append(items[0]);
+      }
+
+      if (event.target.matches('.prev')) {
+        slider.prepend(items[items.length - 1]);
+      }
+    });
+  </script>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
